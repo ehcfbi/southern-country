@@ -6,7 +6,7 @@
     <script>
       const encoded = "cmgyMzgkNQ==";
       var answer = prompt("What is the real password?");
-      if(btoa(answer) === encoded){
+      if(answer === atob(encoded)){
       }else{
       alert("That is not good at all.");
       location.reload();
